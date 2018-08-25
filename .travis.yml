@@ -21,7 +21,7 @@ script:
   - ls wheelhouse/
 deploy:
   provider: releases
-  api_key: "65a3e36697b2a6d60788fc50eb03b4123f6248f6"
+  api_key: "4215ab3a2c0df10da109cbb36016cbb28eacf473"
   file: "python_manylinux_demo-1.0-cp27-cp27m-manylinux1_x86_64.whl"
   skip_cleanup: true
   on:
