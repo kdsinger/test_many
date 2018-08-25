@@ -19,3 +19,10 @@ install:
 script:
   - docker run --rm -v `pwd`:/io $DOCKER_IMAGE $PRE_CMD /io/travis/build-wheels.sh
   - ls wheelhouse/
+deploy:
+  provider: releases
+  api_key: "06b2a4fd7ef087d32ca0f320576adb4dc8c23b2e"
+  file: "python_manylinux_demo-1.0-cp27-cp27m-manylinux1_x86_64.whl"
+  skip_cleanup: true
+  on:
+    all_branches: true
